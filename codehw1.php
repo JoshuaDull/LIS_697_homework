@@ -42,4 +42,10 @@ echo $dime . " dimes <br>";
 echo $nickel . " nickels <br>";
 echo $cent . " cents <br>";
 
+$x = 18;
+for ($count = $x; $count >= 1; $count)
+{
+  echo "$count bottles of beer on the wall. $count bottles of beers. <br> Take one down, pass it around " . (--$count) . " bottles of beer on the wall. <br>";
+}
+echo "...and we all fall down...";
 ?>
