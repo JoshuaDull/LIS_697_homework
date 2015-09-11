@@ -1,7 +1,13 @@
-<DOCTYPE HTML>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body style ="background-color:pink">
 <?php
 
-$cent = 697;
+$change = $cent = 697;
+$exact = ($change / 100);
 
 if ($cent >= 100)
   {
@@ -35,12 +41,16 @@ if ($cent >=5)
     $nickel = 0;
   }
 
+echo <<<_END
+The cashier tried to hand me a sack of $change pennies!<br>
+"I'm not a human iPhone," he sighed...
+"fiiinnnne, just tell me how many dollars or quarters or whatever. Who uses cash anyway....?"
+<br>I persist and ask for "$dollar dollars, $quarter quarters, $dime dimes, $nickel nickels, and $cent pennies"
+<br>That $$exact was burning a whole in my pocket. So I head down to the bar.
+<br>Lucky me, they are playing my favorite song.<br>
 
-echo $dollar . " dollars <br>";
-echo $quarter . " quarters <br>";
-echo $dime . " dimes <br>";
-echo $nickel . " nickels <br>";
-echo $cent . " cents <br>";
+_END;
+
 
 $x = 18;
 for ($count = $x; $count >= 1; $count)
@@ -49,3 +59,5 @@ for ($count = $x; $count >= 1; $count)
 }
 echo "...and we all fall down...";
 ?>
+</body>
+</html>
