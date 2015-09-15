@@ -6,7 +6,7 @@
   <body style ="background-color:black;color:white;text-align:center;font-size:125%;font-family:monospace">
 <?php
 
-$change = $cent = 1496;
+$change = $cent = 1426;
 $exact = ($change / 100);
 
 if ($cent >= 100)
@@ -84,7 +84,7 @@ if ($cent >=5)
     }
 
 echo <<<_END
-<br>After purchasing 2 packs of <span style="color:yellow">Juicyfruit</span>, a single loose <span style="color:teal">Newport 100</span>, and large can of <span style="color:lightgreen">Arizona Iced Tea</span>,
+<br>After purchasing 2 packs of <span style="color:yellow">Juicyfruit</span>, a single loose <span style="color:teal">Newport 100</span>, and a large can of <span style="color:lightgreen">Arizona Iced Tea</span>,
 <br>the cashier tried to hand me a sack of <span style="font-size:200%">$change $ch!</span><br>
 <br>Being a very particular person, I specifically ask for:
   <h3>$dollar <span style="color:green">$d</span></h3>
@@ -101,7 +101,21 @@ _END;
 $x = 100;
 for ($count = $x; $count >= 1; $count)
 {
-  echo "$count bottles of beer on the wall. $count bottles of beers.  Take one down, pass it around " . (--$count) . " bottles of beer on the wall. <br><br><br>";
+	if ($count == 1)
+{
+	$b = "bottle";
+} else {
+	$b = "bottles";
+}
+  echo "$count $b of beer on the wall. $count $b of beers. Take one down, pass it around "; 
+  echo (--$count);
+  if ($count ==1)
+  {
+	  $bo = "bottle";
+  } else {
+	  $bo = "bottles";
+  }
+  echo " $bo of beer on the wall. <br><br><br>";
 }
 echo "...and we all fall down...";
 
