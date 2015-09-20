@@ -7,30 +7,31 @@
 <?php
 
 $isbn = "156881111X";
-$a = substr($isbn, 0, 1);
-$b = substr($isbn, 1, 1);
-$c = substr($isbn, 2, 1);
-$d = substr($isbn, 3, 1);
-$e = substr($isbn, 4, 1);
-$f = substr($isbn, 5, 1);
-$g = substr($isbn, 6, 1);
-$h = substr($isbn, 7, 1);
-$i = substr($isbn, 8, 1);
-if (substr($isbn, 9, 1) == "X")
-{
-  $j = 10;
-} else {
-  $j = substr($isbn, 9, 1);
-}
-$test = isbn_tester($a,$b,$c,$d,$e,$f,$g,$h,$i,$j);
+$test = isbn_tester($isbn);
 
 #--------FUNCTION----------
-function isbn_tester($a,$b,$c,$d,$e,$f,$g,$h,$i,$j)
+function isbn_tester($isbn)
 {
+  $a = substr($isbn, 0, 1);
+  $b = substr($isbn, 1, 1);
+  $c = substr($isbn, 2, 1);
+  $d = substr($isbn, 3, 1);
+  $e = substr($isbn, 4, 1);
+  $f = substr($isbn, 5, 1);
+  $g = substr($isbn, 6, 1);
+  $h = substr($isbn, 7, 1);
+  $i = substr($isbn, 8, 1);
+  if (substr($isbn, 9, 1) == "X")
+  {
+    $j = 10;
+  } else {
+    $j = substr($isbn, 9, 1);
+  }
   $total = ((10*$a)+(9*$b)+(8*$c)+(7*$d)+(6*$e)+(5*$f)+(4*$g)+(3*$h)+(2*$i)+(1*$j));
   if ($total % 11 == 0)
   {
-    echo "THAT'S A GINUINE ISBN#";
+    echo $isbn . "<br>THAT'S A GINUINE ISBN#<br>GO HERE<br>| m  |<br>|  o |<br>| r  |<br>|  e |<br>___info___<br>\||||||/<br>\||||/<br>\||/<br>\/";
+    #echo "<a href="http://www.isbnsearch,org/isbn/$isbn">link</a>;
   } else {
     echo "NOPE";
   }
