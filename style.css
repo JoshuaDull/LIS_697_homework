@@ -1,0 +1,38 @@
+body {
+  background-color:black;
+  color:white;
+  text-align:center;
+  font-size:125%;
+  font-family:monospace;
+}
+/* unvisited link */
+a:link {
+    color: #00FF00;
+}
+
+/* visited link */
+a:visited {
+    color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+    color: #F3F315;
+}
+
+p {
+  font-size:200%;
+}
+
+p:hover {
+  color: #FF00FF;
+}
+
+h3 {
+  color:red;
+}
