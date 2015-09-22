@@ -2,7 +2,7 @@ body {
   background-color:black;
   color:white;
   text-align:center;
-  font-size:125%;
+  font-size:145%;
   font-family:monospace;
 }
 /* unvisited link */
@@ -29,10 +29,37 @@ p {
   font-size:200%;
 }
 
-p:hover {
-  color: #FF00FF;
+div {
+  color: #F3f315;
+  font-size:175%;
 }
 
 h3 {
   color:red;
+}
+
+p:hover, div:hover {
+  color:#FF00FF;
+}
+
+.result {
+  width:75px;
+  height:75px;
+}
+
+.sonic, .sonic:hover {
+  font-size: 400%;
+  color: blue;
+  float:none;
+}
+
+.tails, .tails:hover {
+  font-size: 400%;
+  color: orange;
+  float: none;
+}
+
+.try {
+  font-size: 200%;
+  color: orange;
 }
