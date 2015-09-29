@@ -35,11 +35,11 @@ echo "<tr><td></td><td></td><td></td><td></td><td>Average Price: $$average_price
 
 #Let's toss some coins
 echo "<div><br><br>";
-$a = 3;
+$a = 3;#number of consecutive "heads" desired before ending the loop
 echo "Let's randomly pick <img class=small src=http://kandipatterns.com/images/patterns/characters/12076_Classic_Tails.png> or <img class=small src=http://kandipatterns.com/images/patterns/characters/12081_Classic_Sonic_.png><br>";
 echo "How many tries will it take to get $a <img class=small src=http://kandipatterns.com/images/patterns/characters/12081_Classic_Sonic_.png> in a row?<br>";
-$result = tosser($a);
-$count = count($result);
+$result = tosser($a);#call the function
+$count = count($result);#determines the number of attemps during of funtion by counting the number of items in the array $results
 #loop prints picture for each value in result list
 foreach ($result as $flip) {
   if ($flip == 1)
@@ -55,7 +55,6 @@ echo "</div>";
 
 #_-_-_-_-_-_FUNCTIONS_-_-_-_-_-_-
 
-#~~~~
 
 #===consecutive coin tosser
 
