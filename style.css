@@ -47,6 +47,11 @@ p:hover, div:hover {
   height:75px;
 }
 
+.result:hover {
+  width: 85px;
+  height: 85px;
+}
+
 .sonic, .sonic:hover {
   font-size: 400%;
   color: blue;
@@ -62,4 +67,32 @@ p:hover, div:hover {
 .try {
   font-size: 200%;
   color: orange;
+}
+
+.small {
+  width:45px;
+  height:45px;
+}
+
+table {
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  font-size: 150%;
+  padding: 20px;
+  background-color: #ffc4cd;
+}
+
+td {
+  padding: 10px;
+}
+
+td:hover {
+  color: black;
+  background-color: #ffb6c1;
+}
+
+tr:hover {
+  color: grey;
+  background-color: #e5a3ad ;
 }
